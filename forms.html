@@ -9,11 +9,11 @@
 
 <body>
     <h1>Formas</h1>
-    <form action="">
+    <form action="" method="post">
         <fieldset>
             <legend>Dati par sevi</legend>
             <label for="name">Tavs vārds: </label><br>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" required maxlength="10" minlength="3" placeholder="Šeit ir tavs vārds"><br>
             <label for="surname">Tavs uzvārds: </label><br>
             <input type="text" name="surname" id="surname"><br>
             <label for="born_date">Dzimšanas datums: </label><br>
@@ -70,6 +70,13 @@
         <input type="reset" value="Notīrīt formu">
     </form>
     <br><br>
-</body>
 
+
+    <h1>Meklēt ar google</h1>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="" >
+        <input type="submit" value="Meklēt">
+    </form>
+</body>
 </html>
