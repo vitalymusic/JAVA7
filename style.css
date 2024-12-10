@@ -1,0 +1,86 @@
+h1,h2,h3{
+    color:#13fd02;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+}
+.container h3{
+    color:red;
+}
+
+#sec1{
+    background-color: chocolate;
+    padding-top: 30px;
+}
+
+
+/* Bloka elementu modelis */
+
+h1{
+    /* Ārējās Atkāpes */
+    margin:50px;
+    margin: 100px 50px;
+    margin: 20px 30px 40px 50px;
+    margin-top:5px;
+
+    /* Iekšējās atkāpes */
+    padding:50px;
+    padding: 100px 50px;
+    padding: 20px 30px 40px 50px;
+    padding-top:5px;
+
+
+    /* apmales */
+
+    border: 3px solid  red;
+    border-bottom: 3px solid  rgb(0, 255, 38);
+    /* border-width: 10px; */
+    border-bottom-width: 10px;
+    border-radius: 10px 10px 0px 0px;
+
+    /* outline */
+
+    /* outline: 4px double rgb(255, 3, 3);
+    outline-offset: 10px; */
+
+    /* width: 450px; */
+    max-width: 450px;
+    height:300px;
+    margin: 50px auto ; 
+    /* margin auto centrē elementu, ja ta platums ir mazāks par 100% */
+
+
+    box-sizing: border-box;
+    /* Ieteicams likt pie body */
+
+    background-color: aquamarine;
+    color:black
+
+}   
+
+
+
+/* Flexbox (flex) */
+
+.container{
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center
+}
+
+.container div{
+    padding: 10px;
+    border: 3px solid white;
+    height: 100px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
