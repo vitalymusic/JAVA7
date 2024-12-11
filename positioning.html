@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 5000px;
+        }
+
+
+        .block{
+            width: 300px;
+            height: 300px;
+            border:3px solid red;
+            background-color: aquamarine;
+
+        }
+
+        .block3{
+            position: relative;
+            left:100px;
+            top:-100px;
+            z-index: 150;
+        }
+
+        .block1{
+            position: relative;
+        }
+
+        .circle{
+            position: absolute;
+            top: 10px;
+            right:10px;
+        }
+        .block2{
+            position: absolute;
+            left:-10px;
+            bottom:0px;
+            z-index: 100;
+        }
+
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .block4{
+            position: fixed;
+            left:0px;
+            bottom:0px;
+            width: 100vw;
+            height: 100vh;
+            font-size: 150pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(127, 255, 212, 0.479);
+            display: none;
+        }
+
+        .block5{
+            position: sticky;
+            top:0px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="block block1">
+        <div class="circle"></div>
+    </div>
+    <div class="block block2">2</div>
+    <div class="block block3">3</div>
+    <div class="block block4">4</div>
+    <div class="block block5">5</div>
+
+
+</body>
+</html>
