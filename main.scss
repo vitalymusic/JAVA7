@@ -1,0 +1,53 @@
+// galvenās krāsas
+
+$main_text_color: #646e78;
+$background1:linear-gradient(#aebfd0,#4e565f);
+$text_background:#EAB464;
+$text_color:white;
+$accent:#A7754D;
+$default_font:sans-serif;
+
+
+// Mixins
+
+@mixin flex($data){
+    display: flex;
+    justify-content: $data;
+    align-items: center;
+}
+
+:root{
+    margin: 0;
+    padding: 0;
+    font-family: $default_font;
+    font-size: 14pt;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+// Navigācija
+
+nav{
+    padding: 10px 20px;
+    background-color: $text_background;
+    @include flex(space-around);
+    position: sticky;
+    top:0px;
+    z-index: 100;
+
+    a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+        
+    }
+    a:hover{
+        transform: translate(0px,-5px);
+        transition: all 0.3s linear;
+        color:$accent;
+    }
+    
+}
